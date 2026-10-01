@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie - Food Delivery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🍴 Foodie</div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search food..."
+            >
+        </div>
+
+        <button class="cart-button" onclick="openCart()">
+            🛒 Cart <span id="cartCount">0</span>
+        </button>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Delicious Food<br>Delivered To You</h1>
+
+            <p>
+                Order your favorite food and enjoy it at home.
+            </p>
+
+            <button onclick="scrollToMenu()">
+                Order Now
+            </button>
+        </div>
+
+        <div class="hero-image">
+            🍕
+        </div>
+    </section>
+
+
+    <!-- Food Menu -->
+    <section class="menu" id="menu">
+
+        <h2>Popular Food</h2>
+
+        <div class="food-container" id="foodContainer">
+
+            <!-- Food cards will be created using JavaScript -->
+
+        </div>
+
+    </section>
+
+
+    <!-- Cart -->
+    <div class="cart-overlay" id="cartOverlay">
+
+        <div class="cart">
+
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+
+                <button onclick="closeCart()">✕</button>
+            </div>
+
+            <div id="cartItems">
+                <!-- Cart items appear here -->
+            </div>
+
+            <div class="cart-footer">
+
+                <h3>
+                    Total:
+                    ₹<span id="cartTotal">0</span>
+                </h3>
+
+                <button onclick="placeOrder()">
+                    Place Order
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
